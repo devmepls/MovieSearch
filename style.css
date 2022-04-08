@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    overflow: auto;
+    
+}
+
+nav{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 2;
+    background-color: #ff5722;
+}
+
+span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+li{
+    text-decoration: none;
+    display: inline-block;
+}
+
+#submit-btn,#search-term{
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.section-class{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-heading{
+    padding: 10px;
+    
+}
+
+
+.common-movie-div{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.movie-tile{
+    /* text-align: center; */
+    box-shadow: 2px 2px 2px 3px rgb(70 55 55 / 94%);
+    padding: 0 0 7px 0;
+    margin: 10px 20px;
+    background-color: #f0745e;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+.movie-tile:hover{
+    animation: tile-slide-up 0.8s;
+}
+
+@keyframes tile-slide-up {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
+
+.title-div{
+    padding-left: 7px;
+    
+}
+
+.title-div p{
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+.movie-title{
+    max-width: fit-content;
+    word-spacing: -5px;
+    color: rgb(80, 4, 4);
+}
+
+.movie-img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    
+}
+    
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.modal-content{
+    background-color: white;
+    min-width: 300px;
+    width: 90%;
+    margin: 13% auto;
+    height: auto;
+    padding: 20px;
+    border: 3px solid #ff5722;
+    overflow: auto;
+}
+
+#modal-heading{
+    display: flex;
+    justify-content: space-between;
+}

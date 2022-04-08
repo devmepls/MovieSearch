@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+        <span>MOVIE APP</span>
+        <ul>
+            <li><input id="search-term" type="text" placeholder="Movie name"></li>
+            <li><button id="submit-btn">Search</button></li>
+        </ul>
+    </nav>
+    <section id="popular-section" class="section-class">
+        <div class="section-heading">
+            <h1>Popular Movies</h1>
+        </div>
+        <div id="popular-movies" class="common-movie-div">
+        <!-- <div class="movie-tile">
+            <img class="movie-img" src="https://www.filmibeat.com/ph-big/2016/02/bahubali-movie-poster_145449566500.jpg" alt="image-1">
+            <h3>BAHUBALI BAHUBALI BAHUBALI BAHUBALI</h3>
+            
+        </div> -->
+    </div>
+    </section>
+    <section id="top-rated-section" class="section-class">
+        <div class="section-heading">
+            <h1>Top Rated Movies</h1>
+        </div>
+        <div id="top-rated-movies"  class="common-movie-div">
+
+        </div>
+    </section>
+    <div id="simple-modal" class="modal">
+        <div class="modal-content">
+            <div id="modal-heading">
+                <span id="search-title"></span> 
+                <button id="close-modal-btn">&times;</button>
+            </div>
+            <div id="searched-movies" class="common-movie-div">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
